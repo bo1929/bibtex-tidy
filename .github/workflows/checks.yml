@@ -34,3 +34,6 @@ jobs:
 
       - name: Check NPM global install
         run: npx bibtex-tidy -v
+
+      - name: Check manpage
+        run: man bibtex-tidy | grep 'BibTeX Tidy'
